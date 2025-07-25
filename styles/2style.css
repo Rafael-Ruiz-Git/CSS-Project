@@ -16,15 +16,118 @@ height: 108px; /* height from figma*/
   max-width: var(--max-width);
   width: 100%;
   align-items: center; /* align items to center */
+  justify-content: space-between; /* space between logo and navbar equal space*/
 }
 
 .logo {
   height: 32px; /* height from figma */
 }
 
-/* we want the navbar items to be right next to eachother in one line */
+
 .navbar {
   height: 42px; /* height same as logo */
   display: flex;
   
 }
+/* we want the navbar items to be right next to eachother in one line */
+.nav-menu {
+  display: flex;
+  gap: 40px; /* space between each item from figma */
+  align-items: center; /* align items to center */
+}
+
+/* the font size */
+.nav-menu li {
+font-size: 1rem;
+line-height: 1.5; 
+}
+
+
+/* the font of the list items */
+.nav-menu li a {
+font-family: var(--font-family);
+text-decoration: none; /*  remove any default text decoration */
+color: #3B3C4A; /* color from figma */
+transition: color 0.5s; /* we add the transition to the parent class not the pseudo of bellow, this is for the color */
+}
+
+/* for the hover pseudoclass: */
+.nav-menu li a:hover { 
+ color: var(--primary-color); /* color from figma */
+
+}
+
+/* the search input */
+.search-input {
+background-color: #F4F4F5; /* color from figma */
+min-width: 166px; /* width from figma in the fill*/
+min-height: 36px; /* height from figma */
+border-radius: 4px; /* border radius from figma */
+border: 1px solid rgba(255,255,255,0); /* border from figma  the 0 is for transparency, no border visibility with border radius*/
+text-indent: 20px; /* text indent to give a space when you click in the search bar */
+}
+
+.search-container :hover {
+  border: 3px solid var(--primary-color); /* border from figma */
+  outline: none; /* set to non default properties */
+}
+
+/* pseudo-element to style the text for input or textarea */
+.search-input::placeholder {
+    font-size: 0.875rem; /* font size from figma */
+  color: #A1A1AA; /* color from figma */
+  line-height: 20px; /* line height from figma */
+}
+
+/* pseudo-element for when the user selects a certain input, textarea, button */
+.search-input:focus {
+  border: 1px solid var(--primary-color); /* border from figma */
+  outline: none; /* set to non default properties */
+  color: #3b3c4a; /* color from figma */
+}
+
+
+.search-container {
+  position: relative; /* position relative so when we give the icon the position absolute relates to this one instead of the body */
+}
+
+/* the search icon takes over the relative before and pointer events to none so it ignores the interaction */
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  pointer-events: none;
+}
+
+/* Hero section here */
+.main-section {
+  padding: 16px;  /* padding from figma */
+  max-width: var(--max-width); /* max width from figma */
+  margin: auto ; /* center the main section */
+} 
+
+.hero-image {
+min-height: 600px; /* height from figma */
+background-image: url("/images/hero.png"); /* background image from figma */
+background-repeat: no-repeat; /* no repeat */
+background-size: cover; /* cover the whole section */
+border-radius: 1rem; /* border radius from figma */
+border: 1px solid rgba(255,255,255,0); /* border transparency, no border visibility with border radius */
+background-position: center; /* center the background image */
+}
+
+.hero-description {
+  width: 600px; /* width from figma */
+  background-color: #fff; /* white background */
+  border-radius: 0.5rem; /* border radius from figma */
+  box-shadow: 0 12px 24px -6px rgba(24,26,42,0.2), inset 0 0 0 1px #E8E8EA; /* box shadow from figma and the stroke as well. I
+  nset is for the shadow to be inside the border*/
+
+  /* box shadow is 
+  horizontal offset: the distance of the shadow.
+  vertical offset the vertical distance. 
+  spread radius which is optional. 
+  Color*/
+  
+  padding: 40px; /* padding from figma */
+  }

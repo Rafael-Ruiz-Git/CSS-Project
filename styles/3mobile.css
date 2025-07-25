@@ -1,0 +1,11 @@
+.header-wrapper {
+  width: 100%;
+}
+
+.navbar {
+  display: none; /* hide the navbar on mobile */
+}
+
+.hero-image {
+  min-height: 250px; /* minimum height for the hero image */
+}
