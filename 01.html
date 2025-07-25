@@ -4,19 +4,26 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Home Page - Cloudaffle Blog</title>
-<link rel="stylesheet" href="styles/css-reset.css"/>
+<!--before we go to google fonts, get the embedded code for this-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/0css-reset.css"/>
 <!--1st the browser style reset and then ours-->
-<link rel="stylesheet" href="styles/variables.css"/>
-<link rel="stylesheet" href="styles/style.css"/>
+<link rel="stylesheet" href="styles/1variables.css"/>
+<link rel="stylesheet" href="styles/2style.css"/>
 <link 
 rel="stylesheet" 
 media=" "screen and (max-width: 908px)
-href="styles/mobile.css"/>
+href="styles/mobile.css"
+/>
 </head>
 <body>  
   <header class="Header">
-    <div class ="header-wrapper"></div>
-    <img class= "logo" 
+    <div class ="header-wrapper">
+    <img 
+    class= "logo" 
     alt="Website Logo" 
     src="images/cloudaffle-logo.png" 
     />
@@ -32,7 +39,7 @@ href="styles/mobile.css"/>
     <span class="search-container">
       <input type="text" placeholder="Search" class = "search-input"/>
     </span>
-
+  </div>
   </header>
 </body>
 </html>

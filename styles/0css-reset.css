@@ -47,3 +47,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* This is a css used to select everything, every pseudo elements added before or after and we set everything to border box*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* just to make sure the margin is reset by any browser by default */
+* { 
+	margin: 0;
+}

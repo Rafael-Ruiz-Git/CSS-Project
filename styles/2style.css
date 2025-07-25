@@ -1,0 +1,30 @@
+/* we use the * which is the universal selector to apply the font family to every font inside the HTML */
+* {
+  font-family: var(--font-family);
+}
+
+/* using flex box we justify its content as center*/
+.header {
+display: flex;
+justify-content: center;
+height: 108px; /* height from figma*/
+}
+
+.header-wrapper {
+  display: flex;
+  padding: 32px 16px;
+  max-width: var(--max-width);
+  width: 100%;
+  align-items: center; /* align items to center */
+}
+
+.logo {
+  height: 32px; /* height from figma */
+}
+
+/* we want the navbar items to be right next to eachother in one line */
+.navbar {
+  height: 42px; /* height same as logo */
+  display: flex;
+  
+}

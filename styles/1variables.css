@@ -1,0 +1,9 @@
+/*General Variables for the whole project */
+/*Here we declared the variables */
+/*The font comes from the embedded code in google fonts */
+:root {
+  --font-family: 'Work Sans', sans-serif;
+  --primary-color: #DD53F8; /* obtained from figma */
+  --max-width: 1280px; /* obtained from figma when calculating the width plus adding the padding*/
+  
+}
