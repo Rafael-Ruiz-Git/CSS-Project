@@ -106,6 +106,11 @@ text-indent: 20px; /* text indent to give a space when you click in the search b
   margin: auto ; /* center the main section */
 } 
 
+/* the hero section is set to relative so the author section can be set to absolute and be included where this section is */
+.hero-section {
+  position: relative; /* position relative so the author section can be absolute */
+}
+
 .hero-image {
 min-height: 600px; /* height from figma */
 background-image: url("/images/hero.png"); /* background image from figma */
@@ -117,6 +122,9 @@ background-position: center; /* center the background image */
 }
 
 .hero-description {
+  position: absolute; /* position absolute to place it over the hero image */
+  top: 360px; /* top position from figma */
+  left: 64px; /* top position from figma */
   width: 600px; /* width from figma */
   background-color: #fff; /* white background */
   border-radius: 0.5rem; /* border radius from figma */
@@ -131,3 +139,47 @@ background-position: center; /* center the background image */
   
   padding: 40px; /* padding from figma */
   }
+
+  .hero-badge {
+    background-color: var(--primary-color); /* background color from figma */
+    color: #fff; /* white text */
+    font-size: 0.875rem; /* font size from figma */
+    line-height: 1.3;
+    padding: 8px 12px; /* padding from figma */
+    border-radius: 0.5rem;
+  /* can't put a margin bottom casue this is an inline element we put it in the div above by giving it a class*/ 
+  }
+
+  .badge-container {
+    min-height: 28px; /* minimum height from figma */
+    margin-bottom: 16px; /* margin bottom from figma */
+  }
+
+  /* Here we get the class that includes the header 1, h1 and the anchor which includes the text of h1 */
+  .article-details h1 a {
+    text-decoration: none; /* remove all presets */
+    font-weight: 600; /* font weight from figma */
+    font-size: 2.25rem; /* font size from figma was 36 px divided by 16 we have 2.25 rem  */
+    line-height: 2.5rem; /* line-height from figma was 40 px divided by 16 we have 2.5 rem  */
+    color: var(--heading-font-color); /* color from variables */
+      }
+  
+  /* Here we get the class that includes the author info */
+    .author-section {
+      display: flex; /* display flex to align items */
+      align-items: center; /* align items to center */
+      gap: 20px; /* gap between items */
+      font-size: 1rem; /* font size */
+      color: #97989F; /* color from figma */
+      margin-top: 24px; /* margin from figma */
+    }
+
+  /* the author name has a different font weight than the date so we apply the changes here */
+    .author-name {
+      font-weight: 500; 
+          }
+    
+    .author-section img {
+      width: 48px; /* width from figma */
+      height: auto; /* height auto to fit the content */
+    }

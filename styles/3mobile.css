@@ -9,3 +9,13 @@
 .hero-image {
   min-height: 250px; /* minimum height for the hero image */
 }
+
+.hero-section {
+  position: static; /* static position for the hero section mobile */
+}
+.hero-description {
+  width: 80%; /* width for the hero description mobile*/
+  left: 10%; /* center the hero description mobile */
+  padding: 20px; /* padding for the hero description mobile */
+  top: 300px; /* top position for the hero description mobile */
+}
