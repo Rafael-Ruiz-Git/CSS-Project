@@ -19,3 +19,34 @@
   padding: 20px; /* padding for the hero description mobile */
   top: 300px; /* top position for the hero description mobile */
 }
+
+.hero-description h1 a {
+  font-size: 1.5rem; /* smaller font size for the hero description mobile */
+  line-height: 1.2; /* smaller line height for the hero description mobile */
+}
+
+.blog-section {
+  margin-top: 16rem; /* margin top for the blog section mobile */
+}
+
+.single-post{
+  flex-basis: 100%; /* flex basis for the single post mobile, we used this in style for the pc view so we have to use flx basis here as well*/
+  }
+.blogs-sections h1 {
+  margin-top: 250px; /* margin top for the blogs section title mobile */
+}
+
+.footer-wrapper {
+  max-width: 100%; /* full width for the footer wrapper mobile */
+  margin: 0 ; /* no margin for the footer wrapper mobile */
+  justify-content: center; /* center the footer content mobile */
+} 
+
+.footer-links {
+   flex-direction: column; /* column direction for the footer links mobile */
+  row-gap: 20px; /* row gap for the footer links mobile */
+} 
+
+.footer-links li {
+border: none; /* no border for the footer links mobile */
+}

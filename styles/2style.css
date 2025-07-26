@@ -183,3 +183,117 @@ background-position: center; /* center the background image */
       width: 48px; /* width from figma */
       height: auto; /* height auto to fit the content */
     }
+
+
+    /* latest posts */
+    .blogs-sections {
+      margin-top: 10rem; /* margin from figma */
+    }
+
+    .blogs-sections h1 {
+      font-size: 1.5rem; /* font size from figma */
+      line-height: 1.2; /* line height from figma */
+      font-weight: 700; /* font weight from figma */
+    }
+
+    .posts {
+      margin-top: 32px; /* margin from figma */
+      display: flex; /* display flex to align items */
+      flex-wrap: wrap; /* wrap items to the next line */
+      gap: 20px; /* gap between items */
+
+    }
+
+  .single-post {
+    flex-basis: 32%; /* flex basis from figma */
+    padding: 16px; /* padding from figma */
+    border: 1px solid  #e8e8ea; /* white background */
+    border-radius: 0.75rem; /* border radius from figma */
+  }
+
+  .single-post img {
+    width: 100%; /* width from figma */
+    border-radius: 0.6rem; /* border radius from figma */
+  }
+
+  .single-post .article-details {
+    padding: 24px 8px; /* padding from figma */
+  }
+   .single-post h2 a {
+    text-decoration: none; /* remove all presets */
+    font-size: 1.5rem; /* font size from figma  */
+    line-height: 1.2; /* line-height from figma  */
+    font-weight: 600; /* font weight from figma */
+    color: #181a2a; /* color from variables */
+       }
+
+  .single-post .hero-badge {
+    background-color: rgba(75, 107, 251, 0.05); /* background color from figma */
+    color: var(--primary-color); /* color from variables */
+  }
+
+  .single-post .author-section img {
+    width: 36px; /* width from figma */
+    height: auto; /* height auto to fit the content */
+  }
+
+  .view-all {
+    display: flex; /* display flex to align items */
+    justify-content: center; /* center the items */
+    padding: 32px 0; /* padding from figma */
+  }
+
+    .view-all a {
+    text-decoration: none; /* remove all presets */
+    padding: 12px 24px; /* padding from figma */
+    font-size: 1rem; /* font size from figma */
+    line-height: 1.3; /* line height from figma */
+    color: #696a75; /* color from figma */
+    border: 1px solid #696a75; /* border from figma */
+    border-radius: .5rem; /* border radius from figma */
+    transition: background-color, color, 0.5s ; /* transition for the hover effect */
+      }
+
+  .view-all a:hover {
+    background-color: var(--primary-color); /* background color from figma */
+    color: #fff; /* white text */ 
+  }
+
+  /* footer */
+.footer {
+    background-color: #f6f6f7; /* background color from figma */
+    padding: 32px ; /* padding from figma */
+   }
+
+  .footer-wrapper {
+display: flex; /* display flex to align items */
+    max-width: var(--max-width); /* max width from figma */
+    margin: auto; /* center the footer */
+    padding: 0 16px; /* padding from figma */
+    justify-content: flex-end; /* align items to the right */
+  }
+
+  .footer-links {
+    display: flex; /* display flex to align items */
+  }
+  
+  .footer-links li {
+    padding: 0 16px; /* padding from figma */
+    border-right: 1px solid #c6c6c6; /* border from figma */
+  }
+    .footer-links li:last-child {
+    padding: 0 0 0 16px; /* padding from figma */
+    border-right: none; /* border erased from the last one */
+  }
+
+  .footer-links li a {
+    text-decoration: none; /* remove all presets */
+    font-family: var(--font-family); /* font family from variables */
+    color: #3b3c4a; /* color from figma */
+    font-size: 1rem; /* font size from figma */
+    transition: color 0.5s; /* transition for the hover effect */
+  }
+
+    .footer-links li a:hover {
+    color: var(--primary-color); /* font family from variables */
+  }
