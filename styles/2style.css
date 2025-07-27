@@ -125,7 +125,7 @@ background-position: center; /* center the background image */
   position: absolute; /* position absolute to place it over the hero image */
   top: 360px; /* top position from figma */
   left: 64px; /* top position from figma */
-  width: 600px; /* width from figma */
+  width: 870px; /* width from figma */
   background-color: #fff; /* white background */
   border-radius: 0.5rem; /* border radius from figma */
   box-shadow: 0 12px 24px -6px rgba(24,26,42,0.2), inset 0 0 0 1px #E8E8EA; /* box shadow from figma and the stroke as well. I
@@ -162,7 +162,12 @@ background-position: center; /* center the background image */
     font-size: 2.25rem; /* font size from figma was 36 px divided by 16 we have 2.25 rem  */
     line-height: 2.5rem; /* line-height from figma was 40 px divided by 16 we have 2.5 rem  */
     color: var(--heading-font-color); /* color from variables */
+    transition: color 0.5s; /* transition for the hover effect */
       }
+
+  .article-details h1 a:hover {
+    color: rgb(156, 7, 156); /* color from variables */
+  }
   
   /* Here we get the class that includes the author info */
     .author-section {
@@ -180,24 +185,25 @@ background-position: center; /* center the background image */
           }
     
     .author-section img {
-      width: 48px; /* width from figma */
+      width: 100px; /* width from figma */
       height: auto; /* height auto to fit the content */
-    }
+      border-radius: 50%; /* border radius to make it a circle */
+       }
 
 
     /* latest posts */
     .blogs-sections {
-      margin-top: 10rem; /* margin from figma */
+      margin-top: 7.5rem; /* margin from figma */
     }
 
     .blogs-sections h1 {
       font-size: 1.5rem; /* font size from figma */
       line-height: 1.2; /* line height from figma */
       font-weight: 700; /* font weight from figma */
-    }
+               }
 
     .posts {
-      margin-top: 32px; /* margin from figma */
+      margin-top: 12px; /* margin from figma */
       display: flex; /* display flex to align items */
       flex-wrap: wrap; /* wrap items to the next line */
       gap: 20px; /* gap between items */
@@ -225,7 +231,11 @@ background-position: center; /* center the background image */
     line-height: 1.2; /* line-height from figma  */
     font-weight: 600; /* font weight from figma */
     color: #181a2a; /* color from variables */
+    transition: color 0.5s; /* transition for the hover effect */
        }
+  .single-post h2 a:hover {
+    color: rgb(156, 7, 156); /* color from variables */
+  }
 
   .single-post .hero-badge {
     background-color: rgba(75, 107, 251, 0.05); /* background color from figma */

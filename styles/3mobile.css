@@ -33,7 +33,7 @@
   flex-basis: 100%; /* flex basis for the single post mobile, we used this in style for the pc view so we have to use flx basis here as well*/
   }
 .blogs-sections h1 {
-  margin-top: 250px; /* margin top for the blogs section title mobile */
+  margin-top: 285px; /* margin top for the blogs section title mobile */
 }
 
 .footer-wrapper {
